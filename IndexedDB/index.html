@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndexedDB</title>
+    <style>
+      button {
+        margin: 4px;
+      }
+      pre {
+        background: #eee;
+        padding: 10px;
+      }
+    </style>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- 
+    We'll build a "Users" object store with the following features:
+        - Create DB and store
+        - Add a user
+        - Get all users
+        - Update a user
+        - Delete a user    
+    -->
+    <h2>IndexedDB Operations</h2>
+    <button onclick="addTestUsers()">Add Users</button>
+    <button onclick="readUsers()">Read Users</button>
+    <button onclick="updateUserRecord()">Update User 1</button>
+    <button onclick="deleteUserRecord()">Delete User 2</button>
+
+    <h3>Output:</h3>
+    <pre id="output">Click buttons to see results...</pre>
+  </body>
+</html>
